@@ -7,7 +7,13 @@ const app = express();
 
 const PORT = 5000;
 
-app.use(cors());
+app.use(
+  cors({
+    origin:
+      "https://personal-task-manager-indol-six.vercel.app",
+      
+  })
+);
 
 app.use(express.json());
 
