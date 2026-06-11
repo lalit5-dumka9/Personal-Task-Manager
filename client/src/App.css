@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f4ef;
+  font-family: Arial, sans-serif;
+  color: #2d3748;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+
+.header {
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 52px;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #718096;
+  font-size: 16px;
+}
+
+/* Stats */
+
+.stats-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  flex: 1;
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.stat-card h2 {
+  font-size: 32px;
+  color: #4a5568;
+}
+
+.stat-card p {
+  color: #718096;
+  margin-top: 10px;
+}
+
+/* Form */
+
+.task-form-card {
+  background: white;
+  padding: 30px;
+  border-radius: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.form-header h2 {
+  margin-bottom: 5px;
+}
+
+.form-header p {
+  color: #718096;
+  margin-bottom: 20px;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.input-field,
+.textarea-field,
+.search-input {
+  padding: 14px;
+  border: 1px solid #d2d6dc;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+.input-field:focus,
+.textarea-field:focus,
+.search-input:focus {
+  outline: none;
+  border-color: #4299e1;
+}
+
+.textarea-field {
+  resize: vertical;
+}
+
+/* Buttons */
+
+.form-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.primary-btn,
+.secondary-btn,
+.edit-btn,
+.delete-btn,
+.filter-container button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.primary-btn {
+  background: #2d3748;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #1a202c;
+}
+
+.secondary-btn {
+  background: #edf2f7;
+}
+
+.edit-btn {
+  background: #3182ce;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #2b6cb0;
+}
+
+.delete-btn {
+  background: #e53e3e;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c53030;
+}
+
+/* Search */
+
+.search-container {
+  margin-bottom: 25px;
+}
+
+/* Filters */
+
+.filter-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.filter-container button {
+  background: white;
+}
+
+.active-filter {
+  background: #2d3748 !important;
+  color: white;
+}
+
+/* Task List */
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.task-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.task-top {
+  display: flex;
+  gap: 20px;
+}
+
+.task-checkbox input {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.task-content {
+  flex: 1;
+}
+
+.task-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.task-description {
+  color: #718096;
+  margin-bottom: 15px;
+}
+
+.task-meta {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.due-date {
+  color: #4a5568;
+}
+
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.status-active {
+  background: #ebf8ff;
+  color: #2b6cb0;
+}
+
+.status-completed {
+  background: #c6f6d5;
+  color: #276749;
+}
+
+.task-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+/* Completed */
+
+.completed-task {
+  opacity: 0.8;
+}
+
+.completed-text {
+  text-decoration: line-through;
+}
+
+/* Overdue */
+
+.overdue-task {
+  border-left: 6px solid #e53e3e;
+}
+
+.overdue-label {
+  color: #e53e3e;
+  font-weight: 600;
+}
+
+/* Empty State */
+
+.empty-state {
+  background: white;
+  border-radius: 20px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.empty-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.empty-state h2 {
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  color: #718096;
+  margin-bottom: 8px;
+}
+
+.empty-state span {
+  color: #a0aec0;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 38px;
+  }
+
+  .stats-container {
+    flex-direction: column;
+  }
+
+  .task-top {
+    flex-direction: column;
+  }
+
+  .task-actions {
+    flex-direction: column;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .filter-container {
+    flex-wrap: wrap;
+  }
+}
