@@ -10,7 +10,7 @@ const PORT = 5000;
 app.use(
   cors({
     origin:
-      "https://personal-task-manager-indol-six.vercel.app/",
+      "https://personal-task-manager-lalit5-dumka9s-projects.vercel.app/",
   })
 );
 
